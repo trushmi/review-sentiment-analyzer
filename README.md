@@ -47,12 +47,8 @@ Ensure these packages are installed:
    - nltk.download('stopwords')
 
 5. Run the Application
-   - python main.py
-
-## How to Run:
-
-Ensure that all files (main.py, utilities.py, positiveReview.txt, and negativeReview.txt) are in the same directory and run the following command in your terminal:
-python main.py
+   - Ensure that all files (main.py, utilities.py, positiveReview.txt, and negativeReview.txt) are in the same directory and run the following command in your terminal:
+   * python main.py
 
 ## Utility Functions (utilities.py)
 
@@ -64,9 +60,9 @@ python main.py
 
 ## Future Enhancements
 
-The model might be improved by using a larger and more varied dataset for training.
-Integrating additional preprocessing steps, such as lemmatization and negation handling.
-Experimenting with different feature sets and exploring other classification models
+- The model might be improved by using a larger and more varied dataset for training.
+- Integrating additional preprocessing steps, such as lemmatization and negation handling.
+- Experimenting with different feature sets and exploring other classification models
 
 ## Contributions
 
