@@ -6,8 +6,8 @@ from nltk import NaiveBayesClassifier
 
 
 def main():
-    negativeReview = utilities.read_file('./negativeReview.txt')
-    positiveReview = utilities.read_file('./positiveReview.txt')
+    negativeReview = utilities.read_file('./data/negativeReview.txt')
+    positiveReview = utilities.read_file('./data/positiveReview.txt')
 
     words = set()
 
