@@ -6,19 +6,19 @@ from nltk import NaiveBayesClassifier
 
 
 def main():
-    negativeReview = utilities.read_file('./data/negativeReview.txt')
-    positiveReview = utilities.read_file('./data/positiveReview.txt')
+    negative_reviews = utilities.read_file('./data/negativeReview.txt')
+    positive_reviews = utilities.read_file('./data/positiveReview.txt')
 
     words = set()
 
-    for review in negativeReview:
+    for review in negative_reviews:
         words.update(utilities.preprocess_review(review))
-    for review in positiveReview:
+    for review in positive_reviews:
         words.update(utilities.preprocess_review(review))
 
     training = []
-    training.extend(utilities.generate_features(negativeReview,words,'Negative'))
-    training.extend(utilities.generate_features(positiveReview,words,'Positive'))
+    training.extend(utilities.generate_features(negative_reviews,words,'Negative'))
+    training.extend(utilities.generate_features(positive_reviews,words,'Positive'))
 
 
     classifier = nltk.NaiveBayesClassifier.train(training)    
